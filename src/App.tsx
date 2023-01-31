@@ -3,12 +3,9 @@ import ReactFlow, { Background, Controls } from 'reactflow';
 
 function App() {
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
+    <div className="w-screen h-screen">
       <ReactFlow>
-        <Background
-          gap={12}
-          size={2}
-          color="#ccc" />
+        <Background gap={12} size={2} color="#ccc" />
       </ReactFlow>
     </div>
   );
