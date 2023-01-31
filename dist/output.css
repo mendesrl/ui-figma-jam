@@ -517,6 +517,34 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[200\] {
+  width: 200;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
