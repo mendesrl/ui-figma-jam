@@ -7,9 +7,16 @@ export function Square(props: NodeProps) {
         id="right"
         type="source"
         position={Position.Right}
-        className="-right-5 w-3 h-3 bg-red-700"
+        style={{ background: '#fff' }}
       />
-      <Handle id="left" type="source" position={Position.Left} />
+      <Handle
+        id="left"
+        type="source"
+        position={Position.Left}
+        style={{ background: '#fff' }}
+      />
+      <Handle id="top" type="source" position={Position.Top} />
+      <Handle id="bottom" type="source" position={Position.Bottom} />
     </div>
   );
 }
