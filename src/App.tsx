@@ -1,11 +1,13 @@
 import 'reactflow/dist/style.css';
 import ReactFlow, { Background, Controls } from 'reactflow';
+import { zinc } from 'tailwindcss/colors';
 
 function App() {
   return (
     <div className="w-screen h-screen">
       <ReactFlow>
-        <Background gap={12} size={2} color="#ccc" />
+        <Background gap={12} size={2} color={zinc[200]} />
+        <Controls />
       </ReactFlow>
     </div>
   );
