@@ -1,22 +1,41 @@
 import { NodeProps, Handle, Position } from 'reactflow';
 
-export function Square(props: NodeProps) {
+export function Square({ data }: NodeProps) {
   return (
-    <div className="bg-indigo-500 rounded w-[200px] h-[200px]">
+    <div className="px-4 py-2 shadow-md rounded-md bg-white border-2 border-stone-400">
+      <div className="flex">
+        <div className="rounded-full w-12 h-12 flex justify-center items-center bg-gray-100">
+          {data.emoji}
+        </div>
+        <div className="ml-2">
+          <div className="text-lg font-bold">{data.name}</div>
+          <div className="text-gray-500">{data.job}</div>
+        </div>
+      </div>
       <Handle
         id="right"
         type="source"
         position={Position.Right}
-        style={{ background: '#fff' }}
+        className="-right-5 w-16  !bg-teal-500"
       />
       <Handle
         id="left"
         type="source"
         position={Position.Left}
-        style={{ background: '#fff' }}
+        className="w-16  !bg-teal-500"
       />
-      <Handle id="top" type="source" position={Position.Top} />
-      <Handle id="bottom" type="source" position={Position.Bottom} />
+      <Handle
+        id="top"
+        type="source"
+        position={Position.Top}
+        className="w-16  !bg-teal-500"
+      />
+      <Handle
+        id="bottom"
+        type="source"
+        position={Position.Bottom}
+        className="w-16 !bg-teal-500"
+      />
     </div>
   );
 }
