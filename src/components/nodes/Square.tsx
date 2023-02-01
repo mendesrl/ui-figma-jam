@@ -16,25 +16,25 @@ export function Square({ data }: NodeProps) {
         id="right"
         type="source"
         position={Position.Right}
-        className="-right-5 w-16  !bg-teal-500"
+        className="!-right-3 !w-3 !h-3  !bg-teal-500"
       />
       <Handle
         id="left"
         type="source"
         position={Position.Left}
-        className="w-16  !bg-teal-500"
+        className="!-left-3 !w-3 !h-3  !bg-teal-500"
       />
       <Handle
         id="top"
         type="source"
         position={Position.Top}
-        className="w-16  !bg-teal-500"
+        className="!-top-3 !w-3 !h-3  !bg-teal-500"
       />
       <Handle
         id="bottom"
         type="source"
         position={Position.Bottom}
-        className="w-16 !bg-teal-500"
+        className="!-bottom-3 !w-3 !h-3 !bg-teal-500"
       />
     </div>
   );
